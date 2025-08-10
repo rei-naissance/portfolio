@@ -12,20 +12,18 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                     <h3 className="text-2xl font-semibold">
-                        Passionate Web Developer & Tech Creator
+                        Full-Stack Developer, UX & AI Enthusiast
                     </h3>
 
                     <p className="text-muted-foreground">
-                        With over 5 years of experience in web development, I specialize
-                        in creating responsive, accessible, and performant web
-                        applications using modern technologies.
+                        As a senior Computer Science scholar and hands-on developer of 4 years, I build digital experiences that bridge technical excellence with human needs.
+                        My work spans from crafting intuitive UIs to architecting scalable backends—always with a focus on creating solutions that feel effortless and meaningful.
                     </p>
 
                     <p className="text-muted-foreground">
-                        I'm passionate about creating elegant solutions to complex
-                        problems, and I'm constantly learning new technologies and
-                        techniques to stay at the forefront of the ever-evolving web
-                        landscape.
+                        What drives me is the intersection of functionality and emotion:
+                        whether developing maritime booking systems for underserved communities or designing student collaboration tools,
+                        I believe technology should empower first and impress second. 
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -35,7 +33,8 @@ export const AboutSection = () => {
                         </a>
 
                         <a
-                            href=""
+                            href="/Philippe-Andrei-Dael_Resume.pdf"
+                            download
                             className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                         >
                             Download CV

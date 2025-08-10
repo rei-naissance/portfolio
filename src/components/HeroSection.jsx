@@ -8,6 +8,16 @@ export const HeroSection = () => {
         >
             <div className="container max-w-4xl mx-auto text-center z-10">
                 <div className="space-y-6">
+                    {/* Large circular photo placeholder */}
+                    <div className="mx-auto mb-6 flex items-center justify-center">
+                        <div className="w-40 h-40 rounded-full bg-muted-foreground/10 border-4 border-primary flex items-center justify-center overflow-hidden">
+                            <img
+                                src="/Formal-Photo.png"
+                                alt="Your face"
+                                className="w-full h-full object-cover rounded-full"
+                            />
+                        </div>
+                    </div>
                     <h1 className="text-4xl font-bold md:text-6xl tracking-tight">
                         <span className="opacity-0 animate-fade-in">Hi!, I&apos;m</span>
                         {" "}
