@@ -37,7 +37,7 @@ const projects = [
       "A portfolio website to showcase my skills, projects, and experience.",
     image: "/projects/portfolio.png",
     tags: ["React", "TailwindCSS", "Vite"],
-    demoUrl: "https://portfolio-philippe-andrei-daels-projects.vercel.app/",
+    demoUrl: "https://portfolio-tau-liard-17.vercel.app/",
     githubUrl: "https://github.com/rei-naissance/portfolio",
   },
   {
