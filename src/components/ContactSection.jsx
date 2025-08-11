@@ -17,19 +17,54 @@ export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
-
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+    const formData = new FormData(e.target);
+    try {
+      const response = await fetch("https://formspree.io/f/meozvdkj", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
       });
-      setIsSubmitting(false);
-    }, 1500);
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        e.target.reset();
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again.",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+      });
+    }
+    setIsSubmitting(false);
   };
+
+  // Old toast logic
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   setIsSubmitting(true);
+
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message sent!",
+  //       description: "Thank you for your message. I'll get back to you soon.",
+  //     });
+  //     setIsSubmitting(false);
+  //   }, 1500);
+  // };
+  
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -113,13 +148,16 @@ export const ContactSection = () => {
 
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit} // Removed custom handler
           >
             <h3 className="text-2xl font-semibold mb-6 text-center">
               Send a Message
             </h3>
 
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              onSubmit={handleSubmit}
+            >
               <div>
                 <label
                   htmlFor="name"
