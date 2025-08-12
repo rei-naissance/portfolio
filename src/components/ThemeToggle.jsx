@@ -32,7 +32,7 @@ export const ThemeToggle = () => {
                 "fixed max-sm:hidden top-3 right-3 z-50 p-2 rounded-full",
                 "focus:outline-hidden",
                 "hover:shadow-[0_0_16px_4px_hsl(var(--primary))]",
-                "transition-colors transition-shadow duration-300"
+                "transition-shadows duration-300"
             )}
         >
             {" "}
