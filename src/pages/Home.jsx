@@ -3,6 +3,7 @@ import { StarBackground } from "@/components/StarBackground"
 import { Navbar } from "@/components/Navbar"
 import { HeroSection } from "@/components/HeroSection"
 import { AboutSection } from "@/components/AboutSection"
+import { WorkExperienceSection } from "@/components/WorkExperienceSection"
 import { SkillsSection } from "../components/SkillsSection"
 import { ProjectsSection } from "../components/ProjectsSection"
 import { Footer } from "../components/Footer"
@@ -25,6 +26,7 @@ const Home = () => {
             <main>
                 <HeroSection />
                 <AboutSection />
+                <WorkExperienceSection />
                 <SkillsSection />
                 <ProjectsSection />
                 <ContactSection />

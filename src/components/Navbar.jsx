@@ -3,11 +3,12 @@ import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
-    {name: "Home", href: "#hero"},
-    {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
-    {name: "Projects", href: "#projects"},
-    {name: "Contact", href: "#contact"},
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
 ]
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -37,7 +38,7 @@ export const Navbar = () => {
 
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
-                        <a 
+                        <a
                             key={key}
                             href={item.href}
                             className="text-foreground/80 text-md hover:text-primary animation-colors duration-300"
@@ -46,18 +47,18 @@ export const Navbar = () => {
                         </a>
                     ))}
                 </div>
-                
+
 
                 {/* Mobile View */}
 
                 <button onClick={
-                    () => setIsMenuOpen((prev) =>  !prev)
+                    () => setIsMenuOpen((prev) => !prev)
                 }
                     className="md:hidden p-2 text-foreground z-50"
                     aria-label={isMenuOpen ? "Close Menu" : "Open Menu"
-                }>
+                    }>
                     {isMenuOpen ? (
-                        <X size={24} />   
+                        <X size={24} />
                     ) : (
                         <Menu size={24} />
                     )}
@@ -70,18 +71,18 @@ export const Navbar = () => {
                         ? "opacity-100 pointer-events-auto"
                         : "opacity-0 pointer-events-none"
                 )}>
-                <div className="flex flex-col space-y-8 text-xl">
-                    {navItems.map((item, key) => (
-                        <a 
-                            key={key}
-                            href={item.href}
-                            className="text-foreground/80 text-md hover:text-primary animation-colors duration-300"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            {item.name}
-                        </a>
-                    ))}
-                </div>
+                    <div className="flex flex-col space-y-8 text-xl">
+                        {navItems.map((item, key) => (
+                            <a
+                                key={key}
+                                href={item.href}
+                                className="text-foreground/80 text-md hover:text-primary animation-colors duration-300"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                {item.name}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
 
