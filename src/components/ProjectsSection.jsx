@@ -3,35 +3,56 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "CnPI",
-    description: "An improvement on URL shorteners, allowing you to save your links, generate QR codes, and track analytics.",
-    image: "/projects/cnpi.png",
-    tags: ["React", "TailwindCSS", "Supabase", "Vite"],
-    demoUrl: "https://cnpi.vercel.app/",
-    githubUrl: "https://github.com/rei-naissance/cnpi",
+    title: "CookFlow",
+    description:
+      "A recipe sharing platform with a cooking assistant featuring smart timers, voice guidance via Groq SDK, and ingredients & progress tracking.",
+    image: "/projects/cookflow.png",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Groq SDK", "Framer Motion"],
+    demoUrl: "https://cookflow-two.vercel.app/",
+    githubUrl: "https://github.com/rei-naissance/cookflow",
   },
   {
     id: 2,
-    title: "CookFlow",
+    title: "CNPI",
     description:
-      "Personal helper to follow recipes easier with AI text-to-speech, automated timers, and user-friendly UI.",
-    image: "/projects/cookflow.png",
-    tags: ["Next.js", "React", "TailwindCSS", "Supabase", "Groq"],
-    demoUrl: "https://cookflow-two.vercel.app/",
-    githubUrl: "https://github.com/rei-naissance/cookflow",
+      "A URL shortener with custom aliases, QR code generation, click analytics tracking, and a centralized management dashboard.",
+    image: "/projects/cnpi.png",
+    tags: ["React", "TypeScript", "Vite", "Supabase", "TailwindCSS", "Radix UI"],
+    demoUrl: "https://cnpi.vercel.app/",
+    githubUrl: "https://github.com/rei-naissance/cnpi",
   },
   {
     id: 3,
     title: "PillPal",
     description:
-      "An AI-powered web app symptom tracker to check for possible conditions, along with the medicines and advice before primary care.",
+      "An AI-powered healthcare assistant that analyzes symptoms and suggests OTC medications, prescriptions, and home remedies via HuggingFace.",
     image: "/projects/pillpal.png",
-    tags: ["React", "Next.js", "TailwindCSS", "OpenAI", "Groq"],
+    tags: ["React", "Next.js", "TypeScript", "TailwindCSS", "HuggingFace"],
     demoUrl: "https://pillpal-three.vercel.app/",
     githubUrl: "https://github.com/rei-naissance/PillPal",
   },
   {
     id: 4,
+    title: "Churn Risk Detector",
+    description:
+      "A scikit-learn powered model that predicts customer churn risk from free-text shipping complaints using TF-IDF + Random Forest with a Gradio web UI.",
+    image: "/projects/churn-risk-detector.png",
+    tags: ["Python", "scikit-learn", "Gradio", "HuggingFace"],
+    demoUrl: "https://huggingface.co/spaces/reinaissanced/churn-risk-detector",
+    githubUrl: "https://github.com/rei-naissance/Churn-Risk-Detector",
+  },
+  {
+    id: 5,
+    title: "IMDB Sentiment Model",
+    description:
+      "An LSTM-based sentiment classifier for IMDB movie reviews with a Streamlit web app, built with TensorFlow/Keras and running on CPU.",
+    image: "/projects/imdb-sentiment.png",
+    tags: ["Python", "TensorFlow", "Keras", "Streamlit"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/rei-naissance/imdb-sentiment-analysis",
+  },
+  {
+    id: 6,
     title: "Portfolio",
     description:
       "A portfolio website to showcase my skills, projects, and experience.",
@@ -41,7 +62,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/portfolio",
   },
   {
-    id: 5,
+    id: 7,
     title: "Litterbox",
     description:
       "A community-driven forum platform for CIT-U students to keep track of events, announcements, and activities.",
@@ -51,7 +72,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/Litterbox",
   },
   {
-    id: 6,
+    id: 8,
     title: "Huggle",
     description:
       "An e-commerce platform for goods with low visibility with a buyer mobile application, seller mobile application, and admin dashboard.",
