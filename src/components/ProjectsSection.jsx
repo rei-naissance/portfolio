@@ -3,6 +3,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "goodbAI",
+    description:
+      "An AI-powered Spotify playlist scanner that detects and removes AI-generated music using an ONNX ML model running locally in the browser via WebAssembly.",
+    image: "/projects/goodbai.png",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "ONNX Runtime", "Spotify API", "WebAssembly"],
+    demoUrl: "https://goodb-ai.vercel.app/",
+    githubUrl: "https://github.com/rei-naissance/goodbAI",
+  },
+  {
+    id: 2,
     title: "CookFlow",
     description:
       "A recipe sharing platform with a cooking assistant featuring smart timers, voice guidance via Groq SDK, and ingredients & progress tracking.",
@@ -12,7 +22,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/cookflow",
   },
   {
-    id: 2,
+    id: 3,
     title: "CNPI",
     description:
       "A URL shortener with custom aliases, QR code generation, click analytics tracking, and a centralized management dashboard.",
@@ -22,7 +32,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/cnpi",
   },
   {
-    id: 3,
+    id: 4,
     title: "PillPal",
     description:
       "An AI-powered healthcare assistant that analyzes symptoms and suggests OTC medications, prescriptions, and home remedies via HuggingFace.",
@@ -32,7 +42,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/PillPal",
   },
   {
-    id: 4,
+    id: 5,
     title: "Churn Risk Detector",
     description:
       "A scikit-learn powered model that predicts customer churn risk from free-text shipping complaints using TF-IDF + Random Forest with a Gradio web UI.",
@@ -42,7 +52,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/Churn-Risk-Detector",
   },
   {
-    id: 5,
+    id: 6,
     title: "IMDB Sentiment Model",
     description:
       "An LSTM-based sentiment classifier for IMDB movie reviews with a Streamlit web app, built with TensorFlow/Keras and running on CPU.",
@@ -52,7 +62,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/imdb-sentiment-analysis",
   },
   {
-    id: 6,
+    id: 7,
     title: "Portfolio",
     description:
       "A portfolio website to showcase my skills, projects, and experience.",
@@ -62,7 +72,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/portfolio",
   },
   {
-    id: 7,
+    id: 8,
     title: "Litterbox",
     description:
       "A community-driven forum platform for CIT-U students to keep track of events, announcements, and activities.",
@@ -72,7 +82,7 @@ const projects = [
     githubUrl: "https://github.com/rei-naissance/Litterbox",
   },
   {
-    id: 8,
+    id: 9,
     title: "Huggle",
     description:
       "An e-commerce platform for goods with low visibility with a buyer mobile application, seller mobile application, and admin dashboard.",
